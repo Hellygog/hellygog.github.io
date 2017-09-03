@@ -1,0 +1,15 @@
+
+title: Hellygog
+description: > 
+  Unique Hellygog textile art hand made gifts from local makers all under one roof at Logie Steading in Moray. Opening hours 10:30 - 5:00 seven days a week !
+baseurl: "" 
+url: "https://hellygog.github.io" 
+
+# Build settings
+
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

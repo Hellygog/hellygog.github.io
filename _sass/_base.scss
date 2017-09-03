@@ -1,0 +1,26 @@
+$background: url('/img/helly-background-green-min.jpg') no-repeat center center fixed;
+$font-style: "Muli", sans-serif;
+$link-color: #206563;
+$contact-background: rgba(149, 255, 0, 0.8);  
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$pinterest-color: #cb2027;
+$black: #000;
+$white: #fff;
+$yellow-button: #FFFF00;
+$blue-button: #00ffea;
+$pink-button: #ea00ff;
+$orange-button: #ff6b00;
+$green-button: #95ff00;
+$medium-shadow: #939393;
+$light-shadow: #d3d3d3;
+$lightest-shadow: #a9a9a9;
+$content-background: rgba(101,99,32,0.9);
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

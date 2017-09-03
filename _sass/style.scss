@@ -1,0 +1,322 @@
+
+html { 
+    background: $background;
+    background-size: cover;
+}
+
+
+body {
+    font-family: $font-style;
+}
+
+h1 {
+    line-height:2.5rem;
+}
+
+a {
+    color: $link-color;
+}
+
+.contact {
+    position: absolute;
+    right:2em;
+    top:2em;
+    z-index:9999;
+}
+
+.contact-elements {
+    align-items: center; 
+    background-color: $contact-background;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    justify-content: flex-start; 
+    line-height:1.5em;
+}
+
+.contact-details {
+    margin-top: 0;
+    padding: 0 1em;
+}
+
+.social-list {
+    line-height: 1em;
+    list-style-type: none;
+    padding:0;
+    text-align: center;
+
+    li {
+        display:inline-block;
+
+            a {
+                padding: 0.75em;
+            }
+    }
+}
+
+.fa-2x {
+    font-size: 1.5em !important;
+}
+
+.fa-facebook {
+    color: $facebook-color;
+}
+
+.fa-instagram {
+    color: $black;
+ }
+
+.fa-twitter {
+    color: $twitter-color;
+}
+
+.fa-pinterest {
+    color: $pinterest-color;
+}
+
+.logoContainer {
+   height:auto;  
+}
+
+.imgContainer {
+    height: 40%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    position: relative;
+    width: 95%;
+
+    h2 {
+        display:none;
+    }
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+}
+
+.button {
+    border-radius: 10px;
+    display: block;
+    font-weight:700;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+
+.goto_btn {
+    background-color: $yellow-button; 
+    color: $black;
+    right: 75%;
+    top: 66%;
+    text-shadow: 1px 1px $medium-shadow;
+}
+
+.goto_btn2 {
+    background-color: $blue-button;
+    color: $black;
+    right: 74.5%;
+    top: 75%;
+    text-shadow: 1px 1px $light-shadow;
+    transform: matrix(1, -0.2, 0.2, 1, 0.5, 0.5); 
+}
+
+.goto_btn3 {
+    background-color: $pink-button;
+    color: $white;
+    right:73%;
+    top: 84%;
+    text-shadow: 2px 1px $black;
+    transform: matrix(1, -0.4, 0.5, 1, 0.5, 0.5); 
+}
+
+
+.goto_btn4 {
+    background-color: $orange-button;
+    color: $white;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    right:70%;
+    top: 94%;
+    text-shadow: 1px 1px $lightest-shadow;
+    transform: matrix(1, -0.8, 1, 1, 0.5, 0.5); 
+}
+
+.goto_btn5 {
+    background-color: $green-button;
+    color: $black;
+    font-size: 0.75rem;
+    right:65%;
+    top: 98%;
+    text-shadow: 1px 1px $lightest-shadow;
+    transform: matrix(0.7, -0.8, 1, 1, 0.5, 0.5); 
+}
+
+.content {
+    background-color: $content-background;
+    border-radius:10px;
+    color: $white;
+    font-size: 1em;
+    line-height:1.5em;
+    margin: 5em auto 2em;
+    padding: 2em;
+    text-align: center;
+    width: 80%;
+
+    a {
+        color: $white;
+    }
+
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1500px) {
+
+    .goto_btn2 {
+        top: 73%;
+    }
+
+    .goto_btn3 {
+        right: 73.5%;
+        top: 80%;
+    }
+
+    .goto_btn4 {
+        right:71.5%;
+        top: 89%;
+    }
+
+    .goto_btn5 {
+        font-size: 1rem;
+        right: 67%;
+        top: 94.5%;
+        transform: matrix(0.7, -0.9, 1, 0.5, 0.5, 0.5);
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .contact {
+        right: 0.5em;
+        top: 0.5em;
+    }
+
+    .button {
+        padding: 0.25rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .contact {
+        right: 0.25em;
+        top: 0.25em;
+    }
+
+    .contact h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-elements {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .contact-details {
+        margin-bottom: 0;
+    }
+
+    .fa-2x {
+        font-size: 1rem !important;
+    }
+
+    .button {
+        font-size:0.75rem;
+    }
+
+    .goto_btn4, .goto_btn5 {
+        font-size: 0.6rem;
+    }
+
+    .goto_btn {
+        top: 68%;
+    }
+
+    .goto_btn2 {
+        top: 76%;
+    }
+
+    .goto_btn3 {
+        text-shadow: 1px 1px $black;
+    }
+
+    .goto_btn4 {
+        top: 95%;
+    }
+
+    .goto_btn5 {
+        text-shadow: 0.5px 1px $lightest-shadow;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+   
+    .contact {
+        position: relative;
+    }
+
+    .contact-elements {
+        margin: 2.5rem;
+        font-size: 1rem;
+
+        h2 {
+            padding-top:2rem;
+            padding-bottom: 0.75rem;
+        }
+
+        fa-2x {
+            font-size: 2rem;
+        }
+    }
+
+    .button {
+        font-size: 1rem;
+        margin: 0.5rem auto;
+        position: static;
+        transform: none;
+        text-align: center;
+        width:50%;
+    }
+
+    .imgContainer a {
+        text-decoration:none;
+    }
+
+    .content {
+        margin-top: 2em;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .button {
+        width: auto;
+    }
+
+}
