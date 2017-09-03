@@ -19,11 +19,8 @@ a {
 
 
 .contact {
-    position: absolute;
-    right:2em;
-    top:2em;
-    z-index:9999;
-        align-items: center; 
+    align-items: center; 
+    align-items: center; 
     background-color: $contact-background;
     border-radius:10px;
     display: flex;
@@ -33,7 +30,11 @@ a {
     line-height:1.5em;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    position: absolute;
+    right:2em;
+    top:2em;
     text-align: center;
+    z-index:9999;
 
     h2 {
         margin-top: 0.5rem;
@@ -130,7 +131,7 @@ a {
     background-color: $blue-button;
     color: $black;
     right: 75%;
-    top: 70.3%;
+    top: 71%;
     text-shadow: 1px 1px $light-shadow;
     transform: matrix(1, -0.2, 0.2, 1, 0.5, 0.5); 
 }
@@ -139,7 +140,7 @@ a {
     background-color: $pink-button;
     color: $white;
     right:74%;
-    top: 79%;
+    top: 80.2%;
     text-shadow: 2px 1px $black;
     transform: matrix(1, -0.4, 0.5, 1, 0.5, 0.5); 
 }
@@ -150,7 +151,7 @@ a {
     color: $white;
     font-size: 0.75rem;
     padding: 0.5rem 1rem;
-    right:72%;
+    right:71.8%;
     top: 92%;
     text-shadow: 1px 1px $lightest-shadow;
     transform: matrix(1, -0.8, 1, 1, 0.5, 0.5); 
@@ -160,25 +161,28 @@ a {
     background-color: $green-button;
     color: $black;
     font-size: 0.75rem;
-    right:67.2%;
-    top: 94.7%;
+    right:67%;
+    top: 97%;
     text-shadow: 1px 1px $lightest-shadow;
     transform: matrix(0.7, -0.8, 1, 1, 0.5, 0.5); 
 }
 
 .content {
-    background-color: $content-background;
-    border-radius:10px;
     color: $white;
     font-size: 1em;
     line-height:1.5em;
-    margin: 5em auto 2em;
-    padding: 2em;
     text-align: center;
-    width: 80%;
 
     a {
         color: $white;
+    }
+
+    .content-inner {
+        background-color: $content-background;
+        border-radius:10px;
+        margin: 5em auto 2em;
+        padding: 2em;
+        width: 80%;
     }
 
 }
@@ -231,6 +235,10 @@ footer {
 
     .button {
         padding: 0.25rem 1rem;
+    }
+
+    .goto_btn4 {
+        top: 93%;
     }
 
     .fa-2x {
