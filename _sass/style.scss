@@ -21,11 +21,14 @@ a {
 .contact {
     align-items: center; 
     align-items: center; 
-    background-color: $contact-background;
+    background: $contact-background;
     border-radius:10px;
+    box-shadow: inset 0 0 10px #666;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    font-size: 0.8em;
+    font-size: 1em;
+    font-weight: 700;
     justify-content: flex-start; 
     line-height:1.5em;
     margin-top: 0.25rem;
@@ -40,6 +43,10 @@ a {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
 
+    }
+
+    a {
+        color: $white;
     }
 }
 
@@ -109,6 +116,7 @@ a {
 
 .button {
     border-radius: 10px;
+    box-shadow: inset 0 0 10px #666;
     display: block;
     font-weight:700;
     font-size: 1rem;
@@ -116,71 +124,83 @@ a {
     position: absolute;
     text-transform: uppercase;
     text-decoration:none;
+
+    &:hover {
+         box-shadow: inset 0 0 20px #4d4d4d;
+    }
 }
 
 
 .goto_btn {
-    background-color: $yellow-button; 
+    background: $gold-button; 
     color: $black;
     right: 75%;
     top: 62%;
-    text-shadow: 1px 1px $medium-shadow;
+    text-shadow: 1px 1px $light-shadow;
 }
 
 .goto_btn2 {
-    background-color: $blue-button;
-    color: $black;
+    background: $teal-button;
+    background-size: cover;
+    color: $white;
     right: 75%;
     top: 71%;
-    text-shadow: 1px 1px $light-shadow;
+    text-shadow: 1px 1px $black;
     transform: matrix(1, -0.2, 0.2, 1, 0.5, 0.5); 
 }
 
 .goto_btn3 {
-    background-color: $pink-button;
-    color: $white;
-    right:74%;
-    top: 80.2%;
-    text-shadow: 2px 1px $black;
+    background: $flippy-button;
+    background-size: cover;
+    color: $black;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    right:73%;
+    top: 81%;
+    text-shadow: 1px 1px $medium-shadow;
     transform: matrix(1, -0.4, 0.5, 1, 0.5, 0.5); 
 }
 
 
 .goto_btn4 {
-    background-color: $orange-button;
-    color: $white;
+    background: $linen-button;
+    background-size: cover;
+    color: $black;
     font-size: 0.75rem;
     padding: 0.5rem 1rem;
     right:71.8%;
-    top: 92%;
+    top: 91%;
     text-shadow: 1px 1px $lightest-shadow;
     transform: matrix(1, -0.8, 1, 1, 0.5, 0.5); 
 }
 
 .goto_btn5 {
-    background-color: $green-button;
-    color: $black;
+    background: $green-h-button;
+    color: $white;
     font-size: 0.75rem;
-    right:67%;
-    top: 97%;
-    text-shadow: 1px 1px $lightest-shadow;
+    right:66.7%;
+    top: 100%;
+    text-shadow: 1px 1px $black;
     transform: matrix(0.7, -0.8, 1, 1, 0.5, 0.5); 
 }
 
 .content {
-    color: $white;
+    color: $black;
     font-size: 1em;
+    font-weight: 600;
     line-height:1.5em;
     text-align: center;
 
     a {
-        color: $white;
+        color: $black;
+        font-weight: bold;
     }
 
     .content-inner {
-        background-color: $content-background;
+        background: $content-background;
         border-radius:10px;
-        margin: 5em auto 2em;
+        box-shadow: inset 0 0 10px #666;
+        margin: 6em auto 2em;
         padding: 2em;
         width: 80%;
     }
@@ -191,30 +211,35 @@ a {
 
 footer {
     text-align: center;
+    font-weight:600;
 }
 
 
 @media screen and (min-width: 1500px) {
 
+    .goto_btn {
+        right: 75.5%;
+    }
+
     .goto_btn2 {
-        right: 74.5%;
+        right: 75.5%;
         top: 69%;
     }
 
     .goto_btn3 {
         right:73.7%;
-        top: 76.5%;
+        top: 77.1%;
     }
 
     .goto_btn4 {
-        right:72.2%;
-        top: 85.9%;
+        right:72.9%;
+        top: 85.2%;
     }
 
     .goto_btn5 {
         font-size: 1rem;
-        right:68%;
-        top: 91.6%;
+        right:68.5%;
+        top: 95%;
         transform: matrix(0.7, -0.9, 1, 0.5, 0.5, 0.5);
     }
 
@@ -233,12 +258,22 @@ footer {
 
 @media screen and (max-width: 1200px) {
 
+    .contact {
+        font-size: 0.8rem;
+    }
+
     .button {
         padding: 0.25rem 1rem;
     }
 
+    .goto_btn3 {
+        right:72.7%;
+        top: 81.5%;
+        padding: 0.5rem 1rem !important;
+    }
+
     .goto_btn4 {
-        top: 93%;
+        top: 92%;
     }
 
     .fa-2x {
@@ -288,19 +323,18 @@ footer {
     }
 
     .goto_btn3 {
-        text-shadow: 1px 1px $black;
-        top: 82.5%;
+        font-size: 1rem;
+        top: 85%;
     }
 
     .goto_btn4 {
         right: 71%;
-        top: 96%;
+        top: 96.7%;
     }
 
     .goto_btn5 {
-        right: 65%;
-        top: 99%;
-        text-shadow: 0.5px 1px $lightest-shadow;
+        right: 64.5%;
+        top: 104%;
     }
 
 }
@@ -315,6 +349,10 @@ footer {
         transform: none;
         text-align: center;
         width:50%;
+    }
+
+    .goto_btn3 {
+        font-size: 1.25rem;
     }
 
     .imgContainer a {
